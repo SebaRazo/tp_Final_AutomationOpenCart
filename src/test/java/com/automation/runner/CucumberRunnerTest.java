@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"com.automation.stepDefinitions", "com.automation.hooks"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         tags = "@regression"
-        //tags = "@TEST-1237"
+        //tags = "@TEST-1240"
 )
 public class CucumberRunnerTest extends AbstractTestNGCucumberTests {
 

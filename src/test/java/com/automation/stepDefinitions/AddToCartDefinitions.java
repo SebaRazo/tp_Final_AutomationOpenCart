@@ -37,7 +37,7 @@ public class AddToCartDefinitions {
         Assert.assertEquals(shoppingCartPage.getUnitPrice(), "$80.00", "No coincide el precio unitario del producto");
         Assert.assertEquals(shoppingCartPage.getTotalPrice(), "$240.00", "No coincide el precio total del producto");
         productPage.clickcheckoutBtn();
-        //productPage.continueShopping();
+
     }
 }
 
