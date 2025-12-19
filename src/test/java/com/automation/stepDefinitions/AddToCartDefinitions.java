@@ -36,8 +36,9 @@ public class AddToCartDefinitions {
         Assert.assertEquals(shoppingCartPage.getProductCartName(), "Canon EOS 5D", "No coincide con el producto elegido");
         Assert.assertEquals(shoppingCartPage.getUnitPrice(), "$80.00", "No coincide el precio unitario del producto");
         Assert.assertEquals(shoppingCartPage.getTotalPrice(), "$240.00", "No coincide el precio total del producto");
-        productPage.clickcheckoutBtn();
-
+        Assert.assertTrue(shoppingCartPage.isCheckoutButtonDisplayed(), "El botón Checkout no está visible");
+        //productPage.clickcheckoutBtn();
+        shoppingCartPage.cleanCart();
     }
 }
 

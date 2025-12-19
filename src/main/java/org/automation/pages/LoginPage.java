@@ -12,7 +12,6 @@ public class LoginPage extends BasePage {
     public LoginPage(WebDriver driver) {
         super(driver);
     }
-
     public void login(String username, String password) {
         clear(emailInput);
         sendKeys(emailInput, username);

@@ -12,7 +12,7 @@ public class CreateAccountPage extends BasePage {
     private By confirmPassword = By.id("input-confirm");
     private By checkbox = By.name("agree");
     private By continueBtn = By.xpath("//input[@value=\"Continue\"]");
-    private By textIncompletedField = By.xpath("//div[@class=\"text-danger\"]"); //revisar
+    private By textIncompletedField = By.xpath("//div[@class=\"text-danger\"]");
 
     public CreateAccountPage(WebDriver driver) {
         super(driver);
